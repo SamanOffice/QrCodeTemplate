@@ -75,31 +75,31 @@ public class MainActivity extends AppCompatActivity {
 
         btnScan.setOnClickListener(view -> {
 
-            startInstalledAppDetailsActivity(this);
+          //  startInstalledAppDetailsActivity(this);
 
-//
-//            if (!checkPermission()) {
-//                requestPermission();
-//            }else {
-//
-//                Log.e(TAG, "initView: " + "hiiiii");
-//                IntentIntegrator intentIntegrator = new IntentIntegrator(
-//
-//                        MainActivity.this
-//                );
-//
-//                //set flash light
-//                intentIntegrator.setPrompt("for flash use volume up");
-//                //set beep
-//                intentIntegrator.setBeepEnabled(true);
-//                //locked orientation
-//                intentIntegrator.setOrientationLocked(true);
-//                //set capture activity
-//                intentIntegrator.setCaptureActivity(Capture.class);
-//                //init scan
-//                intentIntegrator.initiateScan();
-//
-//            }
+
+            if (!checkPermission()) {
+                requestPermission();
+            }else {
+
+                Log.e(TAG, "initView: " + "hiiiii");
+                IntentIntegrator intentIntegrator = new IntentIntegrator(
+
+                        MainActivity.this
+                );
+
+                //set flash light
+                intentIntegrator.setPrompt("for flash use volume up");
+                //set beep
+                intentIntegrator.setBeepEnabled(true);
+                //locked orientation
+                intentIntegrator.setOrientationLocked(true);
+                //set capture activity
+                intentIntegrator.setCaptureActivity(Capture.class);
+                //init scan
+                intentIntegrator.initiateScan();
+
+            }
      });
 
     }
